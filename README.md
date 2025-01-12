@@ -26,8 +26,8 @@ Follow these instructions to install and set up the project.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/project.git
-   cd project
+   git clone https://github.com/mdeepaktiwari/web-ook-backend.git
+   cd web-ook-backend
    ```
 
 2. Install all dependencies:

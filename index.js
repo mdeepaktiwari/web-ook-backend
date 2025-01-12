@@ -22,6 +22,7 @@ const routes = require("./routes");
 io.on("connection", (socket) => {
   socket.on("save-user", (data) => {
     try {
+      if (!data?.token) return;
       const userObj = jwt.verify(data.token, process.env.JWT_SECRET);
       userSocketMap.set(userObj.userId, socket.id);
       console.log(
